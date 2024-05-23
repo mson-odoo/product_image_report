@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+        <!-- <xpath expr="" position="inside">
+        </xpath> -->
+        <th name="th_description" position="after">
+            <th name="th_image" class="text-start">Image</th>
+        </th>
+        <td name="account_invoice_line_name" position="after">
+            <td name="td_image" style="width: 1px;">
+                <span t-field="line.image_1920" t-options='{"widget": "image"}' class="w-100"/>
+            </td>
+        </td>
+    </template>
+</odoo>

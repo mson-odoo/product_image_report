@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="seq_generate_product_barcode" model="ir.sequence">
+        <field name="name">Auto Create Product Barcode Sequence</field>
+        <field name="code">product.barcode.sequence</field>
+        <field name="prefix">BAR</field>
+        <field name="padding">4</field>
+    </record>
+
+</odoo>

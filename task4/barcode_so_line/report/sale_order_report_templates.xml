@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_document" inherit_id="sale.report_saleorder_document">
+        <th name="th_description" position="after">
+            <th name="th_image" class="text-start">Image</th>
+        </th>
+        <td name="td_name" position="after">
+            <td name="td_image" style="width: 1px;">
+                <span t-field="line.image_1920" t-options='{"widget": "image"}' class="w-100"/>
+            </td>
+        </td>
+    </template>
+
+    <template id="sale_order_portal_content" inherit_id="sale.sale_order_portal_content">
+        <th id="product_name_header" position="after">
+            <th id="product_image_header" class="text-start">Image</th>
+        </th>
+        <td id="product_name" position="after">
+            <td id="product_image" style="width: 1px;">
+                <span t-field="line.image_1920" t-options='{"widget": "image"}' class="w-100"/>
+            </td>
+        </td>
+    </template>
+    <!-- report_rental_order_document -->
+</odoo>
